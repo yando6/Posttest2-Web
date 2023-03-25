@@ -1,0 +1,152 @@
+
+.contact {
+  background-color: var(--jet);
+  padding-block-start: calc(var(--section-padding) + 60px);
+}
+
+.contact .container {
+  display: grid;
+  gap: 48px;
+}
+
+.contact-form {
+  background-color: var(--white);
+  padding: 25px;
+}
+
+.contact-text {
+  margin-block: 5px 30px;
+}
+
+.contact .label {
+  margin-block-end: 8px;
+}
+
+.input-field {
+  padding: 10px 12px;
+  border: 1px solid var(--jet);
+  margin-block-end: 24px;
+  outline: none;
+  transition: box-shadow var(--transition-1);
+}
+
+.input-field:focus {
+  box-shadow: inset 0 0 0 1px var(--jet);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.contact-list .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-list .contact-item:not(:last-child) {
+  margin-block-end: 35px;
+}
+
+.contact-list .item-icon {
+  color: var(--jet);
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.contact-list .item-icon ion-icon {
+  font-size: 2.5rem;
+}
+
+.contact .label-lg {
+  color: var(--white_a80);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-400);
+  margin-block-end: 5px;
+}
+
+.contact .body-lg {
+  color: var(--white);
+  word-break: break-all;
+}
+
+
+.input-field label {
+  font-family: sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+}
+.input-field select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: none;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-field select option {
+  color: #555;
+  background-color: #fff;
+}
+.input-field input[type="file"] {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 16px;
+  color: #555;
+}
+
+.input-field select:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+/* ?============= MEDIA QUERIES =============?*/
+
+/* *=========== RESPONSIVE FOR LARGE THAN 768PX SCREEN ===========* */
+
+@media (min-width: 768px) {
+
+  .contact-form {
+    padding: 35px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .contact .container {
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-content {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+}
+
+
